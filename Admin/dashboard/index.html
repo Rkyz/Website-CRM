@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../scss/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.code.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7ba4c5ecf4.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-container">
+            <div class="side-top-navigation">
+                <div class="logo">
+                    <a href="">CRM</a>
+                </div>
+            </div>
+            <div class="top-navigation">  
+                <div class="toggle">
+                    <ion-icon name="menu-outline" class="open"></ion-icon>
+                    <ion-icon name="close-outline" class="close"></ion-icon>
+                </div>
+                <section class="ftco-section" style="margin-right: 140px; ">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 d-flex justify-content-center position-relative" style="top: -162px;">
+                                <div class="btn-group">
+                                  <a href="#" class="btn-img img dropdown-toggle rounded-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image: url(../../img/person_1.jpg); height: 50px; width: 50px; position: absolute; left: 90px; ">
+                                  </a>
+                                  <div class="dropdown-menu position-absolute"
+                                  style=" background-color: #4E31AA; margin-top: 70px; border-radius: 10px;">
+                                    <a class="dropdown-item d-flex align-items-center" href="#"
+                                    style="color:white">
+                                        <div class="icon d-flex align-items-center justify-content-center mr-3" style="background-color: #4E31AA; border-top-left-radius: 10px;">
+                                            <ion-icon name="mail-outline"></ion-icon>
+                                        </div>
+                                        Messages
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#"
+                                    style="color:white">
+                                        <div class="icon d-flex align-items-center justify-content-center mr-3" style="background-color: #4E31AA;">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </div>
+                                        Favorites
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#"
+                                    style="color:white">
+                                        <div class="icon d-flex align-items-center justify-content-center mr-3" style="background-color: #4E31AA; border-bottom-left-radius: 10px;">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                        </div>
+                                        Add People
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+             </div> 
+            </div>
+            <div class="navbar-and-content">
+                <div class="navigation">
+                    <ul>
+                        <li class="list active">
+                            <b></b>
+                            <b></b>
+                            <a href="../dashboard/index.html">
+                                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="../Profile/index.html">
+                                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                                <span class="title">Profile</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="../Mesagges/index.html">
+                                <span class="icon"><ion-icon name="add-outline"></ion-icon></span>
+                                <span class="title">Create</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                                <span class="title">Setting</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                                <span class="title">Help</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <span class="icon"><ion-icon name="lock-open-outline"></ion-icon></span>
+                                <span class="title">Password</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                                <span class="title">SignOut</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-content">
+                    <div class="header-body flex-column">
+                        <h1 class="welcome">Welcome <span class="span-back">Back</span>, Admin!</h1>
+                        <a href="../Mesagges/index.html" class="welcome-button">Create Data</a>
+                    </div>
+                </div>
+                <div class="header-navigation slider">  
+                    <div class="second-navigation">
+                        <ul>
+                            <li><a href="#" onclick="showContent('content1')">Home</a></li>
+                            <li><a href="#" onclick="showContent('content2')">Summary</a></li>
+                            <li><a href="#" onclick="showContent('content3')">Testimoni</a></li>
+                        </ul>
+                        <div class="second-toggle">
+                            <ion-icon name="menu-outline" class="open"></ion-icon>
+                            <ion-icon name="close-outline" class="close"></ion-icon>
+                        </div>
+                    </div>
+                </div> 
+                <div class="navigation-home">
+                    <div class="content1" id="content1">
+                        <div class="card-body">
+                            <div class="card-text-1">Total Visiter</div>
+                        </div>
+                        <div class="card-body-one">
+                            <div class="card-text-2">New Visiter</div>
+                        </div>
+                        <div class="card-body-two">
+                            <div class="card-text-3">-</div>
+                        </div>
+                        <div class="card-body-three">
+                            <div class="card-text-4">Belom Kepikiran</div>
+                        </div>
+                    </div>
+                    <div class="content2" id="content2">
+                        <!-- slide 2 -->
+                        <div class="card-body">
+                            <div class="card-text">slide 2</div>
+                        </div>
+                    </div>
+                    <div class="content3" id="content3">
+                        <!-- slide 3 -->
+                        <div class="card-body">
+                            <div class="card-text">slide 3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-data">
+                    <div class="body-data">
+                        <span class="span-text">Table Data</span>
+                    </div>
+                </div>
+            </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="../../js/script.js"></script>
+        <script src="../../js/jquery.min.js"></script>
+        <script src="../../js/popper.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/main.js"></script>
+        <script src="../../js/four.js"></script>
+        <script src="../../js/side-nav.js"></script>
+    </body>
+    </html>

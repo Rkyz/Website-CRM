@@ -1,0 +1,1 @@
+new TableResize(document.getElementById('example'), {distance: 100, minWidth: 60, restoreState: true, fixed: true});

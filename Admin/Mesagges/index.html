@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../scss/style.scss">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7ba4c5ecf4.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="top-container">
+            <div class="side-top-navigation">
+                <div class="logo">
+                    <a href="">CRM</a>
+                </div>
+            </div>
+            <div class="top-navigation">  
+                <div class="toggle">
+                    <ion-icon name="menu-outline" class="open"></ion-icon>
+                    <ion-icon name="close-outline" class="close"></ion-icon>
+                </div>
+             </div> 
+            </div>
+            <div class="navbar-and-content">
+                <div class="navigation">
+                    <ul>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="../dashboard/index.html">
+                                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="../Profile/index.html">
+                                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                                <span class="title">Profile</span>
+                            </a>
+                        </li>
+                        <li class="list active">
+                            <b></b>
+                            <b></b>
+                            <a href="../Mesagges/index.html">
+                                <span class="icon"><ion-icon name="add-outline"></ion-icon></span>
+                                <span class="title">Create</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                                <span class="title">Setting</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                                <span class="title">Help</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <span class="icon"><ion-icon name="lock-open-outline"></ion-icon></span>
+                                <span class="title">Password</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="#">
+                                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                                <span class="title">SignOut</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-create">
+                    <div class="create-data">
+                        <h1 class="tambah-data-title">Tambahkan Data</h1>
+                        <hr>
+                        <form action="" style="margin-right: 20px; position: relative; top: 50px;">
+                            <div class="input-group mb-3 username-top">
+                              <span class="username-icon" >
+                                <ion-icon name="person-outline" class="username-ion-icon"></ion-icon>                    
+                              </span>
+                              <div class="textInputWrapper">
+                                <input placeholder="Username" type="text" class="textInput">
+                            </div>
+                            </div>
+                            <div class="input-group mb-3 email-top">
+                              <span class="telephone-icon">
+                                <ion-icon name="call-outline" class="telephone-ion-icon"></ion-icon>                        
+                              </span>
+                              <div class="textInputWrapper">
+                                <input placeholder="No Telephone" type="number" class="textInput">
+                            </div>
+                            </div>
+                            <div class="input-group mb-3 email-top">
+                                <span class="date-icon" > 
+                                  <ion-icon name="calendar-outline" class="date-ion-icon"></ion-icon>                    
+                                </span>
+                                <div class="textInputWrapper" >
+                                  <input type="text" placeholder="Tanggal Lahir" class="tumbal-date" readonly>
+                                  <input type="date" class="date" style="display: flex;">
+                              </div>
+                              </div>
+                            <div class="input-group mb-3 password-top">
+                              <span class="gender-icon">        
+                                <ion-icon name="male-female-outline"  class="gender-ion-icon"></ion-icon>
+                              </span>
+                              <div class="textInputWrapper">                
+                              <select class="textInput" required>
+                                <option value="" disabled selected hidden>Gender</option>
+                                <option value="1">Laki-Laki</option>
+                                <option value="2">Perempuan</option>
+                                <option value="3">Netral</option>
+                              </select>
+                            </div>  
+                            </div>
+                            <div class="input-group mb-3 password-top">
+                              <span class="negara-icon">        
+                                <ion-icon name="list-outline" class="negara-ion-icon"></ion-icon>
+                              </span>
+                              <div class="textInputWrapper">                
+                                <select class="textInput" required>
+                                  <option value="" disabled selected hidden>Negara</option>
+                                  <option value="1">Konoha gakure</option>
+                                  <option value="2">Suna gakure</option>
+                                  <option value="3">China gakure</option>
+                                </select>
+                              </div>    
+                            </div>
+                            <div class="input-group mb-3 password-top">
+                              <span class="hobby-icon">        
+                                <ion-icon name="football-outline" class="hobby-ion-icon"></ion-icon>
+                              </span>
+                              <div class="textInputWrapper">
+                                <select class="textInput" name="select" id="select" required>
+                                  <option value="" disabled selected hidden>Hobby</option>
+                                  <option value="option1">Nonton Bkp</option>
+                                  <option value="option2">Nonton Kpop</option>
+                                  <option value="option3">Nonton Anime</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="input-group mb-3 username-top">
+                                <span class="maps-icon"">
+                                  <ion-icon name="map-outline" class="maps-ion-icon"></ion-icon>                  
+                                </span>
+                                <div class="textInputWrapper d-flex">
+                                  <input type="text" class="maps-input" placeholder="Cari lokasi...">
+                                  <button id="search-btn"><i class="fa fa-search"></i></button>
+                                </div>
+                              <div class="input-group mb-3 email-top">
+                                <span class="whatsapp-icon">
+                                  <ion-icon name="logo-whatsapp" class="whatsapp-ion-icon"></ion-icon>                        
+                                </span>
+                                <div class="textInputWrapper">
+                                  <input placeholder="Whatsapp" type="number" class="textInput">
+                               </div>
+                              </div>
+                              <div class="grid-button">
+                              <button class="btn-button">Submit</button>
+                            </div>
+                      </form>
+                    </div>
+                </div>
+                <div class="header-show">
+                    <div class="show-data">
+                        <div class="show-data-navbar">
+                            <div class="toggle-three" style="position: fixed;">
+                                <ion-icon name="menu-outline" class="open"></ion-icon>
+                                <ion-icon name="close-outline" class="close"></ion-icon>
+                            </div>
+                            <div class="table-data">
+                              <section>
+                                <!--for demo wrap-->
+                                <div class="tbl-header">
+                                  <table cellpadding="0" cellspacing="0" border="0" id="example">
+                                    <thead>
+                                      <tr>
+                                        <th>Username</th>
+                                        <th>Telephone</th>
+                                        <th>Tanggal Lahir</th>
+                                        <th>Gender</th>
+                                        <th>Negara</th>
+                                        <th>Hobby</th>
+                                        <th>Alamat</th>
+                                        <th>Whatsapp</th>
+                                      </tr>
+                                    </thead>
+                                  </table>
+                                </div>
+                                <div class="tbl-content">
+                                  <table cellpadding="0" cellspacing="0" border="0">
+                                    <tbody>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rio Alamsyah</td>
+                                        <td>08965234173</td>
+                                        <td>17 Mei 2006</td>
+                                        <td>Laki-Laki</td>
+                                        <td>Indonesia</td>
+                                        <td>Sepak Bola</td>
+                                        <td>Cikaret Gg Kasadaran</td>
+                                        <td>085607436610</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="../../js/script2.js"></script>
+        <script src="../../js/three.js"></script>
+        <script src="../../js/table.js"></script>
+        <script src="../../js/selected.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="../../js/date.js"></script>
+        <script src="../../js/maps.js"></script>
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
+        defer
+      ></script>
+    </body>
+    </html>
